@@ -28,5 +28,21 @@ public class MyMath
 
         return prime;
     }
-}
 
+    public static void DisplayFactors(int num)
+    {
+        int factor = 1;
+
+        while (factor < num)
+        {
+            if(num % factor == 0)
+            {
+                System.out.print(factor + ", ");
+            }
+
+            factor ++;
+        }
+
+        System.out.print(num + "\n");
+    }
+}
