@@ -11,7 +11,7 @@ public class Main
         System.out.print("Enter a number: ");
         int num = Integer.parseInt(sc.nextLine());
 
-        int factorial = MyMath.Factorial(num);
-        System.out.println("Factorial of " + num +  " is: " + factorial);
+        System.out.print("The prime factors of " + num +  " are: ");
+        MyMath.DisplayPrimeFactors(num);
     }
 }
