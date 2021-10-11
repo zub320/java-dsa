@@ -18,7 +18,7 @@ public class MyMath
         {
             for(int factor = 2; factor * factor <= num; factor++)
             {
-                if(num % 2 == 0)
+                if(num % factor == 0)
                 {
                     prime = false;
                     break;
@@ -44,6 +44,21 @@ public class MyMath
         }
 
         System.out.print(num + "\n");
+    }
+
+    public static void DisplayPrimeFactors(int num)
+    {
+        int factor = 1;
+
+        while (factor < num)
+        {
+            if(num % factor == 0 && isPrime(factor))
+            {
+                System.out.print(factor + ", ");
+            }
+
+            factor ++;
+        }
     }
 
     public static int Factorial(int num)
