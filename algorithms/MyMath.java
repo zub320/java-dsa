@@ -45,4 +45,29 @@ public class MyMath
 
         System.out.print(num + "\n");
     }
+
+    public static int Factorial(int num)
+    {
+        int result = 1;
+
+        if (num < 0)
+        {
+            System.out.println("Error: Cannot compute factorial for a negative number!");
+            return -1;
+        }
+        else if (num == 0)
+        {
+            return 1;
+        }
+        else
+        {
+            while (num > 1)
+            {
+                result = result * num;
+                num--;
+            }
+        }
+
+        return result;
+    }
 }

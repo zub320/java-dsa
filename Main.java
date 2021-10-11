@@ -11,6 +11,7 @@ public class Main
         System.out.print("Enter a number: ");
         int num = Integer.parseInt(sc.nextLine());
 
-        MyMath.DisplayFactors(num);
+        int factorial = MyMath.Factorial(num);
+        System.out.println("Factorial of " + num +  " is: " + factorial);
     }
 }
